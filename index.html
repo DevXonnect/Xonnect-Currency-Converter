@@ -67,7 +67,7 @@
         <div class="">
           <p class="lead ml-2">
             Amount To Convert: &nbsp;
-            <input type="text" name="" id="" class="form-control-sm lead rounded" size="10" placeholder="Enter Amount">
+            <input type="text" name="" id="" class="form-control-sm lead rounded" size="10" placeholder="Enter Amount" onkeypress="javascript:return isNumber(event)" required>
           </p>
           <div class="mt-5 form-row">
             <div class="col-md-3"></div>
@@ -102,6 +102,8 @@
     <!-- <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script> -->
     <script src="./js/bootstrap.min.js"></script>
+    <!-- Script for amount input validation -->
+    <script src="./js/input_validation.js"></script>
 
 
 </body>
