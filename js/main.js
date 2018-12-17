@@ -49,16 +49,16 @@ async function convertCurrencies() {
     let amt = Number(input.value)
 
     const currRates = await fetchCurrencies(from, to);
-    const currValues = currRates[from] / currRates[to];
+    const currValues = currRates[to]/currRates[from];
     const converted = (currValues * amt).toFixed(2);
     if (!isNaN(converted)) {
       output.innerText = `${converted} ${(to === "Target Currency (ex. EUR)") ? "" : to}`
     } else {
-    output.innerText = "Please select target & base currencies";
+    output.innerText = "Please select target currency";
     }
   }
   catch{
-    output.innerText = "Please select target & base currencies";
+    output.innerText = "Please select target & base currency";
   }
 
 }
