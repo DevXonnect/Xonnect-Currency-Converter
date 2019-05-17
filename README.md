@@ -1,5 +1,5 @@
 # Xonnect-Currency-Converter
-It converts currency of a country to another country
+Built with HTML, CSS and Javascript API. It converts currency of a country to another country
 
 The App Utilizes a free open source API to perform this conversion
 
